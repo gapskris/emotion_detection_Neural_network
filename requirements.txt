@@ -5,4 +5,5 @@ numpy
 matplotlib
 seaborn
 joblib
-lightgbm
+LightGBM
+tensorflow
