@@ -16,6 +16,7 @@ reverse_emotion_map = {
 
 # App title
 st.title("🧠 Emotion Detection App")
+st.title("😡🤢😱😊😐😔😲")
 st.write("Upload an image and let the model predict the emotion.")
 
 # Upload image
@@ -48,6 +49,7 @@ if uploaded_file is not None:
     ax.set_ylim([0, 1])
     plt.xticks(rotation=45)
     st.pyplot(fig)
+
 
 
 
