@@ -6,7 +6,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 # Load model
-model = tf.keras.models.load_model('best_model.h5')
+model = tf.keras.models.load_model('model/best_model.h5')
 
 # Emotion mapping
 reverse_emotion_map = {
@@ -48,5 +48,6 @@ if uploaded_file is not None:
     ax.set_ylim([0, 1])
     plt.xticks(rotation=45)
     st.pyplot(fig)
+
 
 
