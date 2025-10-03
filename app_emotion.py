@@ -25,7 +25,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 if uploaded_file is not None:
     # Display image
     image = Image.open(uploaded_file).convert('RGB')
-    st.image(image, caption='Uploaded Image', use_column_width=True)
+    st.image(image, caption='Uploaded Image', use_container_width =True)
 
     # Preprocess image
     IMG_HEIGHT, IMG_WIDTH = 48, 48
@@ -49,6 +49,7 @@ if uploaded_file is not None:
     ax.set_ylim([0, 1])
     plt.xticks(rotation=45)
     st.pyplot(fig)
+
 
 
 
